@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+        }
+        nav {
+        display: flex;
+        background-color: #fef7e2;
+        height: 150px;
+        width: 1010px;
+        border-radius: 150px;
+        align-items: center;
+        justify-content: space-around;
+        }
+
+        .button {
+        background-color: #ffdf7e;
+        border: none;
+        height: 45px;
+        width: 150px;
+        border-radius: 50px;
+        font-size: 105%;
+        }
+
+        #shopbutton {
+        background-color: #ffdf7e;
+        border: none;
+        height: 100px;
+        width: 300px;
+        border-radius: 50px;
+        font-size: 170%;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+        
+        #logo {
+        height: 60px;
+        }
+
+        .card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        background-color: #fef7e2;
+        height: 400px;
+        width: 300px;
+        border-radius: 80px;
+        gap: 20px;
+        }
+
+        .cardinfotext {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        }
+
+        .productinfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .productname {
+            font-weight: bold;
+            font-size: 110%;
+        }
+
+        .price {
+            font-size: 120%;
+        }
+
+        .pc {
+            display: flex;
+            background-color: #fef7e2;
+            height: 300px;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+            color: rgb(99, 19, 19);
+        }
+
+        .paragraphpc {
+            width: 400px;
+        }
+        
+        .mobile {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: #fef7e2;
+            height: 600px;
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            color: rgb(99, 19, 19);
+            border-radius: 50px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <button class="button">Our Honey</button>
+        <button class="button">Trace honey</button>
+        <button id="shopbutton"><img id="logo" src="S1P2-Esercizi-Flex-Assets/logo.png">SHOP</button>
+        <button class="button">Facilities</button>
+        <button class="button">Contacts</button>
+    </nav>
+    <div class="card">
+        <div><img height="250px" src="S1P2-Esercizi-Flex-Assets/honey.jpg"></div>
+        <div class="cardinfotext">
+            <div class="productinfo">
+                <div class="productname">100% Bio Honey</div>
+                <div class="productdet">Italian, not treated</div>
+            </div>
+            <div class="price">7$/kg</div>
+        </div>    
+        <div><button class="button">Add to cart</button></div>
+    </div>
+    <article class="pc">
+        <img height="300px" src="S1P2-Esercizi-Flex-Assets/honey.jpg">
+        <div class="articletext">
+            <h3>Our delicious honey</h3>
+            <p class="paragraphpc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Inventore eos soluta quas omnis obcaecati veritatis id dolores, 
+                voluptates iusto voluptatem in distinctio recusandae consequatur e
+                arum maxime voluptatum delectus ea sint?  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Enim, voluptatum adipisci nesciunt sunt rerum fugit possimus 
+                facere error magnam quis odit ut. Inventore commodi atque et?
+                 Sed placeat ad consequatur.
+            </p>
+        </div>
+    </article>
+    <article class="mobile">
+        <img height="220px" src="S1P2-Esercizi-Flex-Assets/honey.jpg">
+        <div>
+            <h3>Our delicious honey</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Inventore eos soluta quas omnis obcaecati veritatis id dolores, 
+                voluptates iusto voluptatem in distinctio recusandae consequatur e
+                arum maxime voluptatum delectus ea sint?  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Enim, voluptatum adipisci nesciunt sunt rerum fugit possimus 
+                facere error magnam quis odit ut. Inventore commodi atque et?
+                 Sed placeat ad consequatur.
+            </p>
+        </div>
+    </article>
+</body>
+</html>
